@@ -40,7 +40,7 @@ class Person{
 	}
 	
 	public void walk(){
-		System.out.println("人走路");
+		System.out.println("人走路--->");
 	}
 	@Deprecated
 	public void eat(){
