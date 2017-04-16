@@ -44,6 +44,6 @@ class Person{
 	}
 	@Deprecated
 	public void eat(){
-		System.out.println("人吃东西");
+		System.out.println("人吃东西<----");
 	}
 }
