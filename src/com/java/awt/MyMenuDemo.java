@@ -12,7 +12,7 @@ public class MyMenuDemo {
 	private Frame f;
 	private MenuBar mb;
 	private Menu m,subMenu,con;
-	private MenuItem closeItem,subItem;
+	private MenuItem closeItem,subItem,subItem2;
 	
 	public MyMenuDemo() {
 		init();
@@ -29,10 +29,12 @@ public class MyMenuDemo {
 		con=new Menu("编辑");
 		
 		subMenu=new Menu("子菜单");
+		subItem2=new MenuItem("子条目二");
 		subItem=new MenuItem("子条目");
 		closeItem =new MenuItem("退出");
 		
 		subMenu.add(subItem);
+		subMenu.add(subItem2);
 		
 		m.add(subMenu);
 		m.add(closeItem);
