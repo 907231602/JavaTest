@@ -10,8 +10,9 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
+
 public class DomDemo {
-	 /**
+    /**
      * 遍历xml文档
      * */
     public static void queryXml(){
@@ -28,6 +29,8 @@ public class DomDemo {
             //遍历该集合，显示结合中的元素及其子元素的名字
             for(int i = 0; i< nList.getLength() ; i ++){
                 Element node = (Element)nList.item(i);
+                System.out.println(node.getElementsByTagName("Name").item(0).getFirstChild());
+                
                 System.out.println("Name: "+ node.getElementsByTagName("Name").item(0).getFirstChild().getNodeValue());
                 System.out.println("Num: "+ node.getElementsByTagName("Num").item(0).getFirstChild().getNodeValue());
                 System.out.println("Classes: "+ node.getElementsByTagName("Classes").item(0).getFirstChild().getNodeValue());
@@ -102,8 +105,8 @@ public class DomDemo {
     }
     public static void main(String[] args){
         //读取
-       // DomDemo.queryXml();
+        DomDemo.queryXml();
         //插入
-        DomDemo.insertXml();
+       // DomDemo.insertXml();
     }
 }
