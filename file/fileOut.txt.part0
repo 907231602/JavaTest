@@ -1,0 +1,4 @@
+sample：
+//创建抽象文件名表示的文件，如果该路径不存在，则不能创建
+File file = new File(path+"\\"+directory+"\\" + filename);
+//在该抽象文件名表示的

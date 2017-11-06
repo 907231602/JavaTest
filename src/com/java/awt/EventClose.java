@@ -23,6 +23,8 @@ public class EventClose {
 class Myevent extends WindowAdapter{
 	   public void windowClosing(WindowEvent e) {
 		   System.out.println("exit");
+		   System.exit(0);
 	   }
+	   
 
 }

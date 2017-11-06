@@ -1,6 +1,7 @@
 package com.java.awt;
 
 import java.awt.Button;
+
 import java.awt.Dialog;
 import java.awt.FlowLayout;
 import java.awt.Frame;
@@ -14,6 +15,11 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.io.File;
 
+/**
+ * 获取文件目录，输入盘符，即可获取盘符下的文件目录
+ * @author Administrator
+ *
+ */
 public class MyWindowDemo {
 	private Frame f;
 	private Button but;

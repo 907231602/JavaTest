@@ -8,6 +8,11 @@ import java.awt.MenuItem;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+/**
+ * 模拟记事本的模样，做下拉菜单
+ * @author Administrator
+ *
+ */
 public class MyMenuDemo {
 	private Frame f;
 	private MenuBar mb;

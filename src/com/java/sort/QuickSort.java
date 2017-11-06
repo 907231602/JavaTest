@@ -31,7 +31,7 @@ public class QuickSort {
 			ltemp++;
 		}
 		if(left<rtemp){
-			quickSort(arr, left, ltemp-1);
+			quickSort(arr, left, rtemp-1);
 		}
 		if(ltemp<rtemp){
 			quickSort(arr, ltemp+1, right);

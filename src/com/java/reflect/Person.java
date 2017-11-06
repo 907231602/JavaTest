@@ -30,7 +30,7 @@ public class Person {
 
 		
 		public Person() {
-			super();
+			//super();
 		}
 		
 		public Person(String name) {

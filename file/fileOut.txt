@@ -1,0 +1,11 @@
+sample：
+//创建抽象文件名表示的文件，如果该路径不存在，则不能创建
+File file = new File(path+"\\"+directory+"\\" + filename);
+//在该抽象文件名表示的文件的父亲（文件夹，抽象的File）上创建目录，这下上面需要的路径存在了。
+file.getParentFile().mkdir();
+//在该目录下开始城建文件，即真正开始生成filename表示的文件
+file.createNewFile();
+
+sample2：
+//创建抽象文件名表示的文件，如果该路径不存在，则不能创建
+File file = new File(path+"\\"+directory+"\\" + filename);创建抽象文件名表示的文件，如果该路径不存在，则不能创建

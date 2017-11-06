@@ -12,7 +12,7 @@ public class TestReflection {
 
 	@Test
 	public void test1() throws Exception{
-		Class clazz=Person.class;
+		Class<Person> clazz=Person.class;
 		//创建clazz对应的运行时类Person类的对象
 		Person p=(Person) clazz.newInstance();
 		
@@ -42,26 +42,26 @@ public class TestReflection {
 	@Test
 	public void test2() throws ClassNotFoundException, IOException{
 		//1.调用运行时类本身的.class属性
-		Class clazz1=Person.class;
+		Class<Person> clazz1=Person.class;
 		System.out.println(clazz1.getName());
 		
-		Class clazz2=String.class;
+		Class<String> clazz2=String.class;
 		System.out.println(clazz2.getName());
 		
 		//2.通过运行时类的对象获取
 		Person p=new Person();
-		Class clazz3=p.getClass();
+		Class<? extends Person> clazz3=p.getClass();
 		System.out.println(clazz3);
 		
 		//3.通过Class的静态方法获取
 		String className="com.java.reflect.Person";
-		Class clazz4=Class.forName(className);
+		Class<?> clazz4=Class.forName(className);
 		System.out.println(clazz4);
 		
 		
 		//4.通过类的加载器
 		ClassLoader classloader=this.getClass().getClassLoader();
-		Class  clazz5=classloader.loadClass(className);
+		Class<?>  clazz5=classloader.loadClass(className);
 		System.out.println("class5="+clazz5);
 		
 		//5.获取包里文件内容

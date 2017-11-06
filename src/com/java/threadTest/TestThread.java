@@ -6,7 +6,7 @@ class subThread extends Thread{
 		// TODO Auto-generated method stub
 		super.run();
 		for(int i=0;i<10;i++){
-			System.out.println(Thread.currentThread().getName()+":"+ i);
+			System.out.println(Thread.currentThread().getName()+":"+ i+"-->>"+Thread.currentThread().getPriority());
 		}
 	}
 }
@@ -24,7 +24,7 @@ public class TestThread {
 		for(int i=11;i<20;i++){
 			System.out.println(Thread.currentThread().getName()+":"+ i);
 			if(i%2==0){
-				System.out.println(Thread.currentThread().getName());
+				System.out.println(Thread.currentThread().getName()+"--> "+Thread.currentThread().getPriority());
 				//Thread.currentThread().yield();
 				try {
 					st.join();

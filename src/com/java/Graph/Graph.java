@@ -7,11 +7,11 @@ class GraphMatrix {
 	static final int MaxValue=65535;
 	
 	char[] Vertex=new char[MaxNum];
-	int GType;
-	int VertexNum;
-	int EdgeNum;
-	int[][] EdgeWeight=new int[MaxNum][MaxNum];
-	int[] isTrav=new int[MaxNum];
+	int GType;//类型
+	int VertexNum;//点数
+	int EdgeNum;//边数
+	int[][] EdgeWeight=new int[MaxNum][MaxNum];//边关系
+	int[] isTrav=new int[MaxNum];//是否遍历过
   }
 	
  

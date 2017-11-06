@@ -16,7 +16,11 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-
+/**
+ * ¼ÇÊÂ±¾
+ * @author Administrator
+ *
+ */
 public class MenuBars {
 	private Frame f;
 	private Menu m,subm;
